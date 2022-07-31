@@ -1,15 +1,16 @@
 import "./homePage.css"
 import { useState, useEffect } from "react"
 import axios from "axios"
+import { Link } from "react-router-dom"
 
 export default function HomePage() {
     const [homePage,setHomePage] = useState()
 
     useEffect(()=>{
-        const promise = axios.get("https://mock-api.driven.com.br/api/v5/cineflex/movies")
+        const promise = axios.get("https://mock-api.driven.com.br/api/v7/cineflex/movies")
         promise.then((promise)=> {
             const movies = promise.data
-            setHomePage(movies.map((movie) => movie.posterURL))
+            setHomePage(movies)
         })
     },[])
     
@@ -18,10 +19,10 @@ export default function HomePage() {
             <>
                 <h1>Selecione o filme</h1>
                 <div className="movieSection">
-                    {homePage.map((image) => {
+                    {homePage.map((movie) => {
                         return(
-                            <div className="moviePoster">
-                                <img src={image} alt="Movie Poster"></img>
+                            <div className="moviePoster" key={movie.id}>
+                                <Link to={`sessoes/${movie.id}`}><img src={movie.posterURL} alt="Movie Poster"/></Link>
                             </div>
                         )
                     })}

@@ -1,0 +1,18 @@
+*{
+    box-sizing: border-box;
+}
+
+a{
+    all:unset
+}
+
+body{
+    margin-bottom: 120px;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 24px;
+    margin: 44px 0 44px 0;
+    text-align: center;
+}

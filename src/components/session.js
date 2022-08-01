@@ -46,7 +46,7 @@ export default function Session() {
                                     }
                                 }}>{index + 1}</div>
                             } else {
-                                return <div className="seat notAvaliable">{index + 1}</div>
+                                return <div className="seat notAvaliable" onClick={() => alert("Esse assento não está disponível")}>{index + 1}</div>
                             }
                         })}
                     </div>

@@ -16,3 +16,188 @@ h1 {
     margin: 44px 0 44px 0;
     text-align: center;
 }
+
+form{
+    margin-left: 24px;
+    margin-top: 44px;
+    display: flex;
+    flex-direction: column;
+}
+
+form p{
+    font-size: 18px;
+    font-weight: 400px;
+}
+
+form input{
+    all:unset;
+    width: 325px;
+    height: 50px;
+    border: 1px solid #D4D4D4;
+    border-radius: 3px;
+    margin-bottom: 7px;
+}
+
+form button{
+    all:unset;
+    width: 225px;
+    height: 42px;
+    background-color: #E8833A;
+    color:#FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    align-self: center;
+    margin-bottom: 30px;
+}
+
+.seats {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 24px;
+}
+
+.seat{
+    height: 26px;
+    width: 26px;
+    cursor: pointer;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 7px;
+    margin-bottom: 18px;
+}
+
+.seat.avaliable{
+    background-color: #C3CFD9;
+    border: 1px solid #808F9D;
+}
+
+.seat.notAvaliable{
+    background-color: #FBE192;
+    border: 1px solid #F7C52B;
+
+}
+
+.seat.avaliable.selected{
+    background-color: #8DD7CF;
+    border: 1px solid #1AAE9E;
+}
+
+.subtitle{
+    display: flex;
+    justify-content: space-around;
+}
+
+.subtitleItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.subtitle p {
+    color: #4E5A65;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+
+footer .movie{
+    width: 375px;
+    height: 120px;
+    background-color: #9EADBA;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.movieCoverBox{
+    width: 65px;
+    height: 90px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.movieCoverBox img{
+    width: 48px;
+    height: 72px;
+}
+
+.movie{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.movie p{
+    margin-left: 14px;
+    font-size: 26px;
+    font-weight: 400;
+    color: #293845;
+}
+
+::placeholder{
+    margin-left: 18px;
+    color: #AFAFAF;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#green,#yellow,#gray{
+    height: 25px;
+    width: 25px;
+    border-radius: 17px;
+}
+
+#green{
+    background-color: #8DD7CF;
+    border: 1px solid #1AAE9E;
+}
+
+#yellow{
+    background-color: #FBE192;
+    border: 1px solid #F7C52B;
+}
+
+#gray{
+    background-color: #C3CFD9;
+    border: 1px solid #808F9D;   
+}
+
+.sucess{
+    color: #247A6B;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.movieInfo{
+    margin-left: 30px;
+}
+
+.movieInfo :nth-child(1){
+    all:unset;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.movieInfo :last-child{
+    margin-bottom: 35px;
+}
+
+.movieInfo p {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.movieInfo :nth-child(2){
+    margin-top: 10px;
+}

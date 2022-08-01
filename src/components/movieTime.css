@@ -80,4 +80,20 @@ footer .movie{
     margin-left: 14px;
     font-size: 26px;
     font-weight: 400;
+    color: #293845;
+}
+
+.home{
+    width: 245px;
+    height: 50px;
+    color: #FFFFFF;
+    background-color: #E8833A;
+    border-radius: 3px;
+    margin-left: 75px;
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

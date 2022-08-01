@@ -1,7 +1,8 @@
-import "./homePage.css"
-import { useState, useEffect } from "react"
 import axios from "axios"
+import { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
+
+import "./homePage.css"
 
 export default function HomePage() {
     const [homePage,setHomePage] = useState()
